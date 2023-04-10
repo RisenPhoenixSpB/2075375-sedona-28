@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <img class="page-header__logo logo" src="./img/logo/logo.svg" alt="Логотип Седоны" width="185" height="96">
+    <button class="page-header__button button" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <nav class="page-header__navigation navigation">
+      <button class="navigation__button button" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
+      </button>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="index.html">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Фото и видео</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">Форма отзыва</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="form-main">
+    <section class="form-main__intro form-intro">
+      <div class="form-intro__wrapper">
+        <span class="form-intro__name"></span>
+      </div>
+    </section>
+    <section class="form-main__feedback">
+      <form class="form-body" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="form-body__fieldset">
+          <legend class="partition-title">Представьтесь:</legend>
+          <div class="form-wrapper">
+            <label class="form-body__label">
+              Имя*:
+              <input class="form-body__input" type="text" name="name" placeholder="Петр" required>
+            </label>
+            <label class="form-body__label">
+              Фамилия*:
+              <input class="form-body__input" type="text" name="name" placeholder="Пустота">
+            </label>
+            <label class="form-body__label">
+              Отчество*:
+              <input class="form-body__input" type="text" name="name" placeholder="Викторович" required>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="form-body__fieldset">
+          <legend class="partition-title">Контактная информация:</legend>
+          <div class="form-wrapper">
+            <label class="form-body__label">
+              Контактный телефон*:
+              <input class="form-body__input telephone-input" type="tel" name="phone-number"
+                placeholder="Введите телефон" required>
+            </label>
+            <label class="form-body__label">
+              Электронная почта*:
+              <input class="form-body__input email-input" type="email" name="email" placeholder="Введите e-mail"
+                required>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="form-body__fieldset">
+          <legend class="partition-title">Ваше общее впечатление:</legend>
+          <ul class="form-wrapper">
+            <li class="form-wrapper__item">
+              <label class="form-body__label">
+                <input class="visually-hidden control-input" type="radio" name="experience" id="positive" checked>
+                <span class="control-mark-radio"></span>
+                <span class="control-label">Скорее положительное</span>
+              </label>
+            </li>
+            <li class="form-wrapper__item">
+              <label class="form-body__label">
+                <input class="visually-hidden control-input" type="radio" name="experience" id="negative">
+                <span class="control-mark-radio"></span>
+                <span class="control-label">Скорее отрицательное</span>
+              </label>
+            </li>
+            <li class="form-wrapper__item">
+              <label class="form-body__label">
+                <input class="visually-hidden control-input" type="radio" name="experience" id="without clarity">
+                <span class="control-mark-radio"></span>
+                <span class="control-label">Затрудняюсь ответить</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-body__fieldset">
+          <legend class="partition-title">Ваше общее впечатление:</legend>
+          <ul class="form-wrapper">
+            <li class="form-wrapper__item">
+              <label class="form-body__label">
+                <input class="visually-hidden control-input" type="checkbox" name="devil-bridge" checked>
+                <span class="control-mark-checkbox"></span>
+                <span class="control-label">Мост дьявола</span>
+              </label>
+            </li>
+            <li class="form-wrapper__item">
+              <label class="form-body__label">
+                <input class="visually-hidden control-input" type="checkbox" name="bell-mountain" checked>
+                <span class="control-mark-checkbox"></span>
+                <span class="control-label">Гора-колокол</span>
+              </label>
+            </li>
+            <li class="form-wrapper__item">
+              <label class="form-body__label">
+                <input class="visually-hidden control-input" type="checkbox" name="slide-park" checked>
+                <span class="control-mark-checkbox"></span>
+                <span class="control-label">Слайд-парк</span>
+              </label>
+            </li>
+            <li class="form-wrapper__item">
+              <label class="form-body__label">
+                <input class="visually-hidden control-input" type="checkbox" name="red-rocks">
+                <span class="control-mark-checkbox"></span>
+                <span class="control-label">Красные скалы</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="form-body__fieldset">
+          <legend class="partition-title">Опишите свои эмоции:</legend>
+          <textarea class="form-body__textarea" name="feedback-field"
+            placeholder="Опишите подробно все свои восторги"></textarea>
+        </fieldset>
+        <button class="form-body__button" type="submit">Отправить отзыв</button>
+      </form>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <p class="page-footer__hashtag">#visitsedona</p>
+      <ul class="page-footer__list">
+        <li class="page-footer__item">
+          <a class="page-footer__link page-footer__link--vk" href="https://vk.com/htmlacademy"></a>
+        </li>
+        <li class="page-footer__item">
+          <a class="page-footer__link page-footer__link--telegram" href="https://t.me/htmlacademy"></a>
+        </li>
+        <li class="page-footer__item">
+          <a class="page-footer__link page-footer__link--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
+        </li>
+      </ul>
+      <p class="page-footer__develop">Разработано</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
