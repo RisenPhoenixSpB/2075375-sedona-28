@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+
+  <header class="page-header">
+    <a class="page-header__link" href="index.html">
+      <img class="page-header__logo logo" src="./img/logo/logo.svg" alt="Логотип Седоны" width="185" height="96">
+    </a>
+    <button class="menu-button" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+    <nav class="page-header__navigation navigation">
+      <button class="menu-button menu-button--close" type="button">
+        <span class="visually-hidden">Закрыть меню</span>
+      </button>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link navigation__link--current" href="index.html">Главная</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="catalog.html">Фото и видео</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="form.html">Форма отзыва</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="catalog-main">
+    <section class="form-main__intro second-intro">
+      <h2 class="visually-hidden">Заставка Седоны</h2>
+      <div class="second-intro__wrapper">
+        <img class="second-intro__image" src="./img/second-intro/second-intro-mobile.png" width="902" height="214">
+      </div>
+    </section>
+    <section class="catalog-main__cards cards">
+      <ul class="cards__list">
+        <li class="cards__item">
+          <div class="card card--wide">
+            <a class="card__link" href="#">
+              <img class="card__image card__image--spaces" src="./img/catalog/cards/spaces.jpg" alt="Просторы на закате"
+                width="280" height="280">
+            </a>
+            <h2 class="card__title">Неродные просторы</h2>
+            <p class="card__author-name">Автор фото: Борис</p>
+            <span class="card__likes">1350</span>
+          </div>
+        </li>
+        <li class="cards__item">
+          <div class="card">
+            <a class="card__link" href="#">
+              <img class="card__image" src="./img/catalog/cards/flora.jpg" alt="Растительность на фоне каньона"
+                width="280" height="280">
+            </a>
+            <h2 class="card__title">Местная растительность</h2>
+            <p class="card__author-name">Автор фото: Сергей</p>
+            <span class="card__likes">143</span>
+          </div>
+        </li>
+        <li class="cards__item">
+          <div class="card">
+            <a class="card__link" href="#">
+              <img class="card__image" src="./img/catalog/cards/road.jpg" alt="Дорога по серпантину в лесу" width="280"
+                height="280">
+            </a>
+            <h2 class="card__title">Дорога на север</h2>
+            <p class="card__author-name">Автор фото: Петр</p>
+            <span class="card__likes-count">96</span>
+          </div>
+        </li>
+        <li class="cards__item">
+          <div class="card">
+            <a class="card__link" href="#">
+              <img class="card__image" src="./img/catalog/cards/road.jpg" alt="Мост из камней в каньоне" width="280"
+                height="280">
+            </a>
+            <h2 class="card__title">Мост дьявола</h2>
+            <p class="card__author-name">Автор фото: Антон</p>
+            <span class="card__likes-count">254</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="video-demo">
+      <h2 class="video-demo__title">Все еще сомневаетесь?</h2>
+      <p class="video-demo__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
+        раз!</p>
+      <a class="video-demo__link" href="#">
+        <img class="video-demo__image" src="./img/catalog/video-demo/video-demo-image.jpg"
+          alt="Скриншот видеопрезентации">
+      </a>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <p class="page-footer__hashtag">#visitsedona</p>
+      <ul class="page-footer__list">
+        <li class="page-footer__item">
+          <a class="page-footer__link page-footer__link--vk" href="https://vk.com/htmlacademy"></a>
+        </li>
+        <li class="page-footer__item">
+          <a class="page-footer__link page-footer__link--telegram" href="https://t.me/htmlacademy"></a>
+        </li>
+        <li class="page-footer__item">
+          <a class="page-footer__link page-footer__link--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
+        </li>
+      </ul>
+      <div class="page-footer__develop-wrapper">
+        <p class="page-footer__develop-text">Разработано</p>
+        <a class="page-footer__develop-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="page-footer__develop-logo" xmlns="http://www.w3.org/2000/svg" width="28" height="33" fill="none">
+            <path fill="#000"
+              d="M14.15.25h-.1L.5 1.59v23.63l13.55 7.66 13.45-7.66V1.6L14.15.25ZM25.6 11.83l-11.54-6.5v-.1h-.1l-.1-.1v.1L2.4 11.83V3.22l11.54-1.15 11.64 1.15v8.6ZM13.95 6.76l11.54 6.4-4.51 2.5-7.13-4.02v1.33l5.92 3.35-.9.48-5.02-2.87v1.34l3.81 2.2-.8.48-3.01-1.72v1.34l1.9 1.05-1.8 1.05-11.44-6.4 11.44-6.51ZM2.41 14.7l11.44 6.5v.96l-7.93-4.5V19l8.03 4.6v1.05l-8.03-4.5v1.34l8.03 4.6 8.13-4.7v-4.97l3.41-1.91v9.56l-11.54 6.6-11.54-6.5V14.7Z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
