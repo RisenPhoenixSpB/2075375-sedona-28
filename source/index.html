@@ -9,17 +9,19 @@
 <body>
 
   <header class="page-header">
-    <img class="page-header__logo logo" src="./img/logo/logo.svg" alt="Логотип Седоны" width="185" height="96">
-    <button class="page-header__button button" type="button">
+    <a class="page-header__link" href="index.html">
+      <img class="page-header__logo logo" src="./img/logo/logo.svg" alt="Логотип Седоны" width="185" height="96">
+    </a>
+    <button class="menu-button" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
     <nav class="page-header__navigation navigation">
-      <button class="navigation__button button" type="button">
+      <button class="menu-button menu-button--close" type="button">
         <span class="visually-hidden">Закрыть меню</span>
       </button>
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a class="navigation__link" href="index.html">Главная</a>
+          <a class="navigation__link navigation__link--current" href="index.html">Главная</a>
         </li>
         <li class="navigation__item">
           <a class="navigation__link" href="catalog.html">Фото и видео</a>
@@ -52,34 +54,33 @@
             <p class="item__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </li>
           <li class="advantages__item item">
-            <span class="item__image item__image--town"></span>
+            <img class="item__image" src="./img/index/advantages/advantages-town.jpg" alt="Изображение городка"
+              width="320" height="260">
           </li>
           <li class="advantages__item item">
             <ul class="item__list">
-              <li class="item__point">
-                <span class="item__point-icon item__point-icon--house"></span>
+              <li class="item__point item__point--house">
                 <h4 class="item__point-title">Жилье</h4>
                 <p class="item__point-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li class="item__point">
-                <span class="item__point-icon item__point-icon--house"></span>
+              <li class="item__point item__point--food">
                 <h4 class="item__point-title">Еда</h4>
                 <p class="item__point-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
-              <li class="item__point">
-                <span class="item__point-icon item__point-icon--house"></span>
+              <li class="item__point item__point--souvenirs">
                 <h4 class="item__point-title">Сувениры</h4>
                 <p class="item__point-text">Не только китайского, но и местного производства!</p>
               </li>
             </ul>
           </li>
           <li class="advantages__item item">
-            <span class="item__image item__image--canyon"></span>
-          </li>
-          <li class="advantages__item item">
             <h3 class="item__title">Там есть мост дьявола</h3>
             <p class="item__number">— №2 —</p>
             <p class="item__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </li>
+          <li class="advantages__item item">
+            <img class="item__image" src="./img/index/advantages/advantages-bridge.jpg" alt="Изображение моста дьявола"
+              width="320" height="260">
           </li>
           <li class="advantages__item item">
             <h3 class="item__title">Небольшая площадь</h3>
@@ -110,7 +111,7 @@
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
       <a class="map__link" href="#">
-        <img class="map__image" src="./img/map/map-mobile.png" alt="Изображение карты" width="320" height="350">
+        <img class="map__image" src="./img/index/map/map-mobile.png" alt="Изображение карты" width="320" height="350">
       </a>
     </section>
   </main>
@@ -129,7 +130,15 @@
           <a class="page-footer__link page-footer__link--youtube" href="https://www.youtube.com/user/htmlacademyru"></a>
         </li>
       </ul>
-      <p class="page-footer__develop">Разработано</p>
+      <div class="page-footer__develop-wrapper">
+        <p class="page-footer__develop-text">Разработано</p>
+        <a class="page-footer__develop-link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="page-footer__develop-logo" xmlns="http://www.w3.org/2000/svg" width="28" height="33" fill="none">
+            <path fill="#000"
+              d="M14.15.25h-.1L.5 1.59v23.63l13.55 7.66 13.45-7.66V1.6L14.15.25ZM25.6 11.83l-11.54-6.5v-.1h-.1l-.1-.1v.1L2.4 11.83V3.22l11.54-1.15 11.64 1.15v8.6ZM13.95 6.76l11.54 6.4-4.51 2.5-7.13-4.02v1.33l5.92 3.35-.9.48-5.02-2.87v1.34l3.81 2.2-.8.48-3.01-1.72v1.34l1.9 1.05-1.8 1.05-11.44-6.4 11.44-6.51ZM2.41 14.7l11.44 6.5v.96l-7.93-4.5V19l8.03 4.6v1.05l-8.03-4.5v1.34l8.03 4.6 8.13-4.7v-4.97l3.41-1.91v9.56l-11.54 6.6-11.54-6.5V14.7Z" />
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
 
