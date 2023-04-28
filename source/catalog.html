@@ -4,19 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <header class="page-header">
-    <a class="page-header__link" href="index.html">
-      <img class="page-header__logo logo" src="./img/logo/logo.svg" alt="Логотип Седоны" width="185" height="96">
+    <a class="logo logo__link" href="index.html">
+      <img class="logo__image" src="./img/logo/logo.svg" alt="Логотип Седоны" width="185" height="96">
     </a>
-    <button class="menu-button" type="button">
+    <button class="page-header__menu-button menu-button menu-button--open" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-    <nav class="page-header__navigation navigation">
-      <button class="menu-button menu-button--close" type="button">
+    <nav class="page-header__navigation page-header__navigation--open">
+      <button class="navigation__menu-button menu-button menu-button--close" type="button">
         <span class="visually-hidden">Закрыть меню</span>
       </button>
       <ul class="navigation__list">
@@ -37,67 +38,59 @@
   </header>
 
   <main class="catalog-main">
-    <section class="form-main__intro second-intro">
-      <h2 class="visually-hidden">Заставка Седоны</h2>
-      <div class="second-intro__wrapper">
-        <img class="second-intro__image" src="./img/second-intro/second-intro-mobile.png" width="902" height="214">
+    <section class="secondary-intro">
+      <div class="secondary-intro__wrapper">
+        <h2 class="visually-hidden">Заставка Седоны</h2>
+        <img class="secondary-intro__text-wrapper secondary-intro__text" src="./img/mobile/catalog/secondary-intro/second-intro-text-mobile.svg" width="229" height="39">
       </div>
     </section>
-    <section class="catalog-main__cards cards">
-      <ul class="cards__list">
-        <li class="cards__item">
-          <div class="card card--wide">
-            <a class="card__link" href="#">
-              <img class="card__image card__image--spaces" src="./img/catalog/cards/spaces.jpg" alt="Просторы на закате"
-                width="280" height="280">
-            </a>
-            <h2 class="card__title">Неродные просторы</h2>
-            <p class="card__author-name">Автор фото: Борис</p>
-            <span class="card__likes">1350</span>
-          </div>
+    <section class="catalog-main__gallery">
+      <div class="catalog-main__gallery-inner">
+        <h2 class="catalog-main__gallery-title">Фото и видео</h2>
+        <p class="catalog-main__gallery-text">Не можете решиться на путешествие <br> из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      </div>
+      <ul class="catalog-main__cards cards-list">
+        <li class="cards-list__item">
+          <a class="cards-list__link" href="#">
+            <img class="cards-list__image" src="./img/mobile/catalog/cards/spaces.jpg" alt="Просторы на закате" width="280" height="280">
+          </a>
+          <h3 class="cards-list__title">Неродные просторы</h3>
+          <p class="cards-list__text">Автор фото: Борис</p>
+          <span class="card__likes">1350</span>
         </li>
-        <li class="cards__item">
-          <div class="card">
-            <a class="card__link" href="#">
-              <img class="card__image" src="./img/catalog/cards/flora.jpg" alt="Растительность на фоне каньона"
-                width="280" height="280">
-            </a>
-            <h2 class="card__title">Местная растительность</h2>
-            <p class="card__author-name">Автор фото: Сергей</p>
-            <span class="card__likes">143</span>
-          </div>
+        <li class="cards-list__item">
+          <a class="cards-list__link" href="#">
+            <img class="cards-list__image" src="./img/mobile/catalog/cards/flora.jpg" alt="Растительность на фоне каньона" width="280" height="280">
+          </a>
+          <h3 class="cards-list__title">Местная растительность</h3>
+          <p class="cards-list__text">Автор фото: Сергей</p>
+          <span class="card__likes">143</span>
         </li>
-        <li class="cards__item">
-          <div class="card">
-            <a class="card__link" href="#">
-              <img class="card__image" src="./img/catalog/cards/road.jpg" alt="Дорога по серпантину в лесу" width="280"
-                height="280">
-            </a>
-            <h2 class="card__title">Дорога на север</h2>
-            <p class="card__author-name">Автор фото: Петр</p>
-            <span class="card__likes-count">96</span>
-          </div>
+        <li class="cards-list__item">
+          <a class="cards-list__link" href="#">
+            <img class="cards-list__image" src="./img/mobile/catalog/cards/road.jpg" alt="Дорога по серпантину в лесу" width="280" height="280">
+          </a>
+          <h3 class="cards-list__title">Дорога на север</h3>
+          <p class="cards-list__text">Автор фото: Петр</p>
+          <span class="card__likes">96</span>
         </li>
-        <li class="cards__item">
-          <div class="card">
-            <a class="card__link" href="#">
-              <img class="card__image" src="./img/catalog/cards/road.jpg" alt="Мост из камней в каньоне" width="280"
-                height="280">
-            </a>
-            <h2 class="card__title">Мост дьявола</h2>
-            <p class="card__author-name">Автор фото: Антон</p>
-            <span class="card__likes-count">254</span>
-          </div>
+        <li class="cards-list__item">
+          <a class="cards-list__link" href="#">
+            <img class="cards-list__image" src="./img/mobile/catalog/cards/spaces.jpg" alt="Мост из камней в каньоне" width="280" height="280">
+          </a>
+          <h3 class="cards-list__title">Мост дьявола</h3>
+          <p class="cards-list__text">Автор фото: Антон</p>
+          <span class="card__likes">254</span>
         </li>
       </ul>
     </section>
-    <section class="video-demo">
-      <h2 class="video-demo__title">Все еще сомневаетесь?</h2>
-      <p class="video-demo__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
+    <section class="catalog-main__demo">
+      <h2 class="catalog-main__demo-title">Все еще сомневаетесь?</h2>
+      <p class="catalog-main__demo-text">Смотрите видеопрезентацию и <br> скорее за билетами, пока они не подорожали в очередной
         раз!</p>
-      <a class="video-demo__link" href="#">
-        <img class="video-demo__image" src="./img/catalog/video-demo/video-demo-image.jpg"
-          alt="Скриншот видеопрезентации">
+      <a class="catalog-main__demo-link" href="#">
+        <img class="catalog-main__demo-image" src="./img/mobile/catalog/demo/demo-video-image.jpg"
+        alt="Скриншот видеопрезентации">
       </a>
     </section>
   </main>

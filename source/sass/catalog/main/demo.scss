@@ -1,0 +1,28 @@
+.catalog-main__demo {
+  max-width: 320px;
+}
+
+.catalog-main__demo-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0 0 20px 0;
+}
+
+.catalog-main__demo-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  margin: 0 0 38px;
+}
+
+.catalog-main__demo-link {
+  display: grid;
+  place-items: center;
+}

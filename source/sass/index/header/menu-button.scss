@@ -1,0 +1,31 @@
+.page-header__menu-button {
+  margin: 0 20px 0 auto;
+  padding: 0;
+}
+
+.navigation__menu-button {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  padding: 0;
+}
+
+.menu-button {
+  display: grid;
+  place-items: center;
+  width: 23px;
+  height: 23px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--open {
+    background-image: url("../img/mobile/index/header/menu-button-open.svg");
+  }
+
+  &--close {
+    background-image: url("../img/mobile/index/header/menu-button-close.svg");
+  }
+}

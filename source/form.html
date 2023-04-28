@@ -4,19 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <header class="page-header">
-    <a class="page-header__link" href="index.html">
-      <img class="page-header__logo logo" src="./img/logo/logo.svg" alt="Логотип Седоны" width="185" height="96">
+    <a class="logo logo__link" href="index.html">
+      <img class="logo__image" src="./img/logo/logo.svg" alt="Логотип Седоны" width="185" height="96">
     </a>
-    <button class="menu-button" type="button">
+    <button class="page-header__menu-button menu-button menu-button--open" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-    <nav class="page-header__navigation navigation">
-      <button class="menu-button menu-button--close" type="button">
+    <nav class="page-header__navigation page-header__navigation--open">
+      <button class="navigation__menu-button menu-button menu-button--close" type="button">
         <span class="visually-hidden">Закрыть меню</span>
       </button>
       <ul class="navigation__list">
@@ -37,68 +38,76 @@
   </header>
 
   <main class="form-main">
-    <section class="form-main__intro second-intro">
-      <h2 class="visually-hidden">Заставка Седоны</h2>
-      <div class="second-intro__wrapper">
-        <img class="second-intro__image" src="./img/second-intro/second-intro-mobile.png" width="902" height="214">
+    <section class="secondary-intro">
+      <div class="secondary-intro__wrapper">
+        <h2 class="visually-hidden">Заставка Седоны</h2>
+        <img class="secondary-intro__text-wrapper secondary-intro__text" src="./img/mobile/form/secondary-intro/second-intro-text-mobile.svg" width="229" height="39">
       </div>
     </section>
-    <section class="form-main__feedback">
+    <section class="form-main__form">
       <h2 class="visually-hidden">Опции формы</h2>
-      <form class="form-body" action="https://echo.htmlacademy.ru/" method="post">
-        <fieldset class="form-body__fieldset">
+      <div class="form-main__form-feedback">
+        <h1 class="form-main__form-title">Оставьте свой отзыв</h1>
+        <p class="form-main__form-text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </div>
+      <form class="form-main__form-body form-body" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="form-body__fieldset form-body__fieldset--name">
           <legend class="partition-title">Представьтесь:</legend>
           <div class="form-wrapper">
             <label class="form-body__label">
               Имя*:
-              <input class="form-body__input" type="text" name="name" placeholder="Петр" required>
+              <input class="form-body__input form-body__input--name" type="text" name="name" placeholder="Петр" required>
             </label>
             <label class="form-body__label">
               Фамилия*:
-              <input class="form-body__input" type="text" name="name" placeholder="Пустота">
+              <input class="form-body__input form-body__input--name" type="text" name="name" placeholder="Пустота">
             </label>
             <label class="form-body__label">
               Отчество*:
-              <input class="form-body__input" type="text" name="name" placeholder="Викторович" required>
+              <input class="form-body__input form-body__input--name" type="text" name="name" placeholder="Викторович" required>
             </label>
           </div>
         </fieldset>
-        <fieldset class="form-body__fieldset">
+        <fieldset class="form-body__fieldset form-body__fieldset--contacts">
           <legend class="partition-title">Контактная информация:</legend>
           <div class="form-wrapper">
             <label class="form-body__label">
               Контактный телефон*:
-              <input class="form-body__input telephone-input" type="tel" name="phone-number"
+              <div class="form-body__label-inner form-body__label-inner--phone">
+                <input class="form-body__input form-body__input--contacts" type="tel" name="phone-number"
                 placeholder="Введите телефон" required>
+              </div>
             </label>
             <label class="form-body__label">
               Электронная почта*:
-              <input class="form-body__input email-input" type="email" name="email" placeholder="Введите e-mail"
+              <div class="form-body__label-inner form-body__label-inner--email">
+                <input class="form-body__input form-body__input--contacts" type="email" name="email" placeholder="Введите e-mail"
                 required>
+              </div>
             </label>
           </div>
         </fieldset>
-        <fieldset class="form-body__fieldset">
+        <fieldset class="form-body__fieldset form-body__fieldset--radio">
           <legend class="partition-title">Ваше общее впечатление:</legend>
-          <ul class="form-wrapper">
-            <li class="form-wrapper__item">
-              <label class="form-body__label">
+          <ul class="form-list">
+            <li class="form-list__item">
+              <label class="form-list__label">
                 <input class="visually-hidden control-input" type="radio" name="experience" id="positive"
                   value="positive" checked>
                 <span class="control-mark-radio"></span>
                 <span class="control-label">Скорее положительное</span>
               </label>
             </li>
-            <li class="form-wrapper__item">
-              <label class="form-body__label">
+            <li class="form-list-wrapper__item">
+              <label class="form-list__label">
                 <input class="visually-hidden control-input" type="radio" name="experience" id="negative"
                   value="negative">
                 <span class="control-mark-radio"></span>
                 <span class="control-label">Скорее отрицательное</span>
               </label>
             </li>
-            <li class="form-wrapper__item">
-              <label class="form-body__label">
+            <li class="form-list-wrapper__item">
+              <label class="form-list__label">
                 <input class="visually-hidden control-input" type="radio" name="experience" id="without-clarity"
                   value="without-clarity">
                 <span class="control-mark-radio"></span>
@@ -107,32 +116,32 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form-body__fieldset">
-          <legend class="partition-title">Ваше общее впечатление:</legend>
-          <ul class="form-wrapper">
-            <li class="form-wrapper__item">
-              <label class="form-body__label">
+        <fieldset class="form-body__fieldset form-body__fieldset--checkbox">
+          <legend class="partition-title">Посещенные достопримечательности:</legend>
+          <ul class="form-list">
+            <li class="form-list__item">
+              <label class="form-list__label">
                 <input class="visually-hidden control-input" type="checkbox" name="devil-bridge" checked>
                 <span class="control-mark-checkbox"></span>
                 <span class="control-label">Мост дьявола</span>
               </label>
             </li>
-            <li class="form-wrapper__item">
-              <label class="form-body__label">
+            <li class="form-list__item">
+              <label class="form-list__label">
                 <input class="visually-hidden control-input" type="checkbox" name="bell-mountain" checked>
                 <span class="control-mark-checkbox"></span>
                 <span class="control-label">Гора-колокол</span>
               </label>
             </li>
-            <li class="form-wrapper__item">
-              <label class="form-body__label">
+            <li class="form-list__item">
+              <label class="form-list__label">
                 <input class="visually-hidden control-input" type="checkbox" name="slide-park" checked>
                 <span class="control-mark-checkbox"></span>
                 <span class="control-label">Слайд-парк</span>
               </label>
             </li>
-            <li class="form-wrapper__item">
-              <label class="form-body__label">
+            <li class="form-list__item">
+              <label class="form-list__label">
                 <input class="visually-hidden control-input" type="checkbox" name="red-rocks">
                 <span class="control-mark-checkbox"></span>
                 <span class="control-label">Красные скалы</span>
@@ -140,14 +149,31 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="form-body__fieldset">
+        <fieldset class="form-body__fieldset form-body__fieldset--textarea">
           <legend class="partition-title">Опишите свои эмоции:</legend>
           <textarea class="form-body__textarea" name="feedback-field"
             placeholder="Опишите подробно все свои восторги"></textarea>
         </fieldset>
         <button class="form-body__button" type="submit">Отправить отзыв</button>
       </form>
-    </section>
+
+      <div class="form-main__form-modal form-main__form-modal--close">
+        <div class="modal modal--error">
+          <h2 class="modal__title">Что-то пошло не так!</h2>
+          <p class="modal__text">Проверьте поля, выделенные <br> красным, скорее всего вы <br> забыли их заполнить</p>
+          <button class="modal-button modal-button--error">Ок</button>
+        </div>
+      </div>
+
+      <div class="form-main__form-modal form-main__form-modal--close">
+        <div class="modal modal--feedback-sent">
+          <h2 class="modal__title">Ваш отзыв отправлен!</h2>
+          <p class="modal__text">Спасибо за ваше участие, ваш <br> отзыв уже поступил к нам. <br> В ближайшее время мы <br> опубликуем его на сайте.</p>
+          <div class="modal__inner">
+          <button class="modal-button modal-button--feedback-sent">Закрыть окно</button>
+        </div>
+        </div>
+      </div>
   </main>
 
   <footer class="page-footer">

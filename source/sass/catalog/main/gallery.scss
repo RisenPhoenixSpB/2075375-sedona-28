@@ -1,0 +1,87 @@
+.catalog-main__gallery {
+  max-width: 320px;
+  margin: 0 0 17px 0;
+}
+
+.catalog-main__gallery-inner {
+  min-height: 141px;
+}
+
+.catalog-main__gallery-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0 0 25px 0;
+}
+
+.catalog-main__gallery-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  margin: 0;
+}
+
+.catalog-main__cards {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cards-list__item {
+  box-sizing: border-box;
+  min-height: 425px;
+  padding: 25px 20px;
+  border-bottom: 1px solid #e5e5e5;
+
+  &:first-child {
+    border-top: 1px solid #e5e5e5;
+  }
+}
+
+.cards-list__link {
+  display: flex;
+  margin: 0 0 15px 0;
+}
+
+.cards-list__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0 0 5px 0;
+}
+
+.cards-list__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  margin: 0 0 16px 0;
+}
+
+.card__likes {
+  position: relative;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 0 0 0 37px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 23px;
+    height: 21px;
+    background: url("../img/mobile/catalog/cards/like-icon.svg") no-repeat center;
+  }
+}
