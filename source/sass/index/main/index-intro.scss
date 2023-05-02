@@ -1,10 +1,13 @@
 .intro {
-  position: relative;
-  box-sizing: border-box;
   max-width: 320px;
+  min-height: 631px;
+}
+
+.intro__inner-images {
+  display: flex;
+  position: relative;
   min-height: 389px;
   background: #000000 url("../img/mobile/index/main/intro/index-intro-mobile.jpg") no-repeat center;
-  padding-top: 90px;
 
   &::before {
     content: "";
@@ -12,12 +15,42 @@
     bottom: 0;
     width: 320px;
     height: 57px;
-    background: url("../img/mobile/index/main/intro/intro-element-mobile.svg") no-repeat center;
+    background: url("../img/mobile/index/main/intro/intro-white-element-mobile.svg") no-repeat;
   }
 }
 
-.intro__text-wrapper {
+.intro__text-image {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  transform: translateY(90px);
+}
+
+.intro__inner {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+  min-height: 205px;
+  background-color: #ffffff;
+  padding: 32px 18px 16px 18px;
+}
+
+.intro__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.intro__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }

@@ -19,33 +19,16 @@
 }
 
 .advantages {
+  position: relative;
   box-sizing: border-box;
   max-width: 320px;
-  background: #ffffff;
-  padding: 32px 0 0 0;
-}
-
-.advantages__intro {
-  box-sizing: border-box;
-  min-height: 205px;
-}
-
-.advantages__title {
-  @include advantages-title-mobile;
-  color: #000000;
-  margin: 0 0 35px 0;
-}
-
-.advantages__text {
-  @include advantages-text-mobile;
-  color: #333333;
 }
 
 .advantages__list-wrapper {
   box-sizing: border-box;
   position: relative;
-  padding-top: 70px;
   background-color: #81b3d2;
+  padding-top: 70px;
 
   &::before {
     content: "";
