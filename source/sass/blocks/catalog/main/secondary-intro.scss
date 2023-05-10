@@ -6,12 +6,12 @@
 .secondary-intro__wrapper {
   position: relative;
   min-height: 158px;
-  background: #000000 url("../img/mobile/catalog/secondary-intro/second-intro-mobile.png") no-repeat center;
+  background: #2e4149 url("../img/mobile/catalog/secondary-intro/second-intro-mobile.png") no-repeat center;
 
   &::before {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     width: 320px;
     height: 57px;
     background: url("../img/mobile/catalog/secondary-intro/second-intro-element.svg.svg") no-repeat center;

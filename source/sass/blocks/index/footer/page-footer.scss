@@ -62,15 +62,15 @@
   column-gap: 12px;
 }
 
-.page-footer__develop-text {
+.page-footer__develop-link {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-}
-
-.page-footer__develop-link {
-  display: flex;
+  text-decoration: none;
 }

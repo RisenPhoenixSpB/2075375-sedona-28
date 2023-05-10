@@ -1,51 +1,4 @@
-@mixin form-title () {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #000000;
-  margin: 0;
-}
-
-@mixin form-text () {
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #333333;
-  margin: 0;
-}
-
-.form-main__form {
-  display: flex;
-  flex-direction: column;
-  row-gap: 53px;
-  max-width: 320px;
-}
-
-.form-main__form-feedback {
-  box-sizing: border-box;
-  max-width: 280px;
-  min-height: 134px;
-  margin: 36px auto 0 auto;
-}
-
-.form-main__form-title {
-  @include form-title;
-  margin: 0 0 24px 0;
-}
-
-.form-main__form-text {
-  @include form-text;
-}
-
-.form-body__fieldset {
+.fieldset {
   box-sizing: border-box;
   max-width: 280px;
   margin: 0 auto;
@@ -70,19 +23,19 @@
   }
 }
 
-.partition-title {
+.fieldset__title {
   @include form-title;
   padding: 0;
   margin: 0 0 20px 0;
 }
 
-.form-wrapper {
+.fieldset__inner {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
 }
 
-.form-body__label {
+.fieldset__label {
   @include form-text;
   position: relative;
   text-align: left;
@@ -90,7 +43,7 @@
   transform: translateX(16px);
 }
 
-.form-body__label-inner {
+.fieldset__container {
   position: relative;
   display: flex;
   max-width: 280px;
@@ -127,7 +80,7 @@
   }
 }
 
-.form-body__input {
+.fieldset__input {
   @include form-title;
   display: block;
   position: relative;
@@ -166,7 +119,7 @@
   }
 }
 
-.form-list {
+.fieldset__list {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
@@ -175,7 +128,7 @@
   list-style: none;
 }
 
-.form-list__label {
+.fieldset__label-choice {
   display: flex;
   align-items: center;
   column-gap: 16px;
@@ -227,7 +180,7 @@
   }
 }
 
-.form-body__textarea {
+.fieldset__textarea {
   @include form-title;
   text-align: left;
   text-transform: none;
@@ -271,37 +224,5 @@
     text-transform: none;
     font-size: 17px;
     color: rgba(0, 0, 0, 0.3);
-  }
-}
-
-.form-body__button {
-  @include form-title;
-  position: relative;
-  font-size: 21px;
-  color: #ffffff;
-  box-sizing: border-box;
-  padding: 0 10px 0 10px;
-  display: grid;
-  place-items: center;
-  min-width: 280px;
-  min-height: 58px;
-  border: none;
-  background-color: #81b3d2;
-  margin: 0 auto 46px auto;
-  cursor: pointer;
-
-  &::before {
-    content: "* — обязательные поля";
-    position: absolute;
-    bottom: -23px;
-    right: 0;
-    font-family: "PT Sans", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 21px;
-    text-align: center;
-    text-transform: uppercase;
-    color: rgba(51, 51, 51, 0.6);
   }
 }

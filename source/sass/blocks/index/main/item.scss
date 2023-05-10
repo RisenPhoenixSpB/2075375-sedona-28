@@ -1,78 +1,6 @@
-@mixin advantages-title-mobile() {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-@mixin advantages-text-mobile() {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-.advantages {
-  position: relative;
-  box-sizing: border-box;
-  max-width: 320px;
-}
-
-.advantages__list-wrapper {
-  box-sizing: border-box;
-  position: relative;
-  background-color: #81b3d2;
-  padding-top: 70px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 320px;
-    height: 37px;
-    background: url("../img/mobile/index/main/intro/intro-blue-element-mobile.svg") no-repeat center;
-  }
-}
-
-.advantages__list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.advantages__item {
-  box-sizing: border-box;
-
-  &:first-child {
-    padding: 0 18px 40px 18px;
-  }
-
-  &:nth-child(3) {
-    padding: 23px 18px 46px 18px;
-  }
-
-  &:nth-child(4) {
-    padding: 37px 18px;
-  }
-
-  &:nth-child(6),
-  &:nth-child(7) {
-    padding: 24px 26px;
-  }
-
-  &:last-child {
-    padding: 24px 18px 28px 18px;
-  }
-}
-
 .item {
   position: relative;
+  padding: 0;
 
   .item__title {
     @include advantages-title-mobile;
@@ -93,6 +21,7 @@
 
   &--blue {
     background-color: #81b3d2;
+    padding: 37px 18px;
 
     .item__title {
       color: #ffffff;
@@ -109,6 +38,7 @@
 
   &--white {
     background-color: #ffffff;
+    padding: 23px 18px 46px 18px;
 
     .item__title {
       color: #000000;
@@ -121,6 +51,7 @@
 
   &--grey {
     background-color: #eeeeee;
+    padding: 24px 26px;
 
     &:not(:last-child)::before {
       content: "";
@@ -153,38 +84,29 @@
     margin: 0 0 25px 0;
   }
 
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+  }
+
   &--house {
     &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 40px;
-      height: 40px;
       background: url("../img/mobile/index/main/advantages/advantages-icons/icon-house.svg") no-repeat center;
     }
   }
 
   &--food {
     &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 40px;
-      height: 40px;
       background: url("../img/mobile/index/main/advantages/advantages-icons/icon-food.svg") no-repeat center;
     }
   }
 
   &--souvenirs {
     &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 40px;
-      height: 40px;
       background: url("../img/mobile/index/main/advantages/advantages-icons/icon-souvenir.svg") no-repeat center;
     }
   }

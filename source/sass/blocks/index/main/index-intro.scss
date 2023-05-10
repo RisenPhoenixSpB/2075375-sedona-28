@@ -7,12 +7,12 @@
   display: flex;
   position: relative;
   min-height: 389px;
-  background: #000000 url("../img/mobile/index/main/intro/index-intro-mobile.jpg") no-repeat center;
+  background: #dceaf3 url("../img/mobile/index/main/intro/index-intro-mobile.jpg") no-repeat center;
 
   &::before {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     width: 320px;
     height: 57px;
     background: url("../img/mobile/index/main/intro/intro-white-element-mobile.svg") no-repeat;

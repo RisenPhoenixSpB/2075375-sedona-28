@@ -1,17 +1,4 @@
-@mixin navigation-title-mobile() {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-top: 17px;
-}
-
-.page-header__navigation {
-  position: absolute;
-  top: 0;
-  z-index: 1;
-
+.navigation {
   &--open {
     display: block;
   }
@@ -20,6 +7,7 @@
     display: none;
   }
 }
+
 
 .navigation__list {
   box-sizing: border-box;

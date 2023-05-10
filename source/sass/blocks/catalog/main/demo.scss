@@ -1,0 +1,47 @@
+.catalog-main__demo {
+  max-width: 320px;
+}
+
+.catalog-main__demo-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0 0 20px 0;
+}
+
+.catalog-main__demo-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  margin: 0 0 38px;
+}
+
+.catalog-main__video-container {
+  position: relative;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-left: 48px solid rgba(255, 255, 255, 0.7);
+    border-top: 27px solid transparent;
+    border-bottom: 27px solid transparent;
+    z-index: 1;
+  }
+}
+
+.catalog-main__demo-video {
+  display: block;
+  position: relative;
+  max-width: 280px;
+  min-height: 177px;
+}
