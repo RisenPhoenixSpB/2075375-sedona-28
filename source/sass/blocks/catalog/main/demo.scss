@@ -22,7 +22,7 @@
   margin: 0 0 38px;
 }
 
-.catalog-main__video-container {
+.catalog-main__video-link {
   position: relative;
   display: grid;
   place-items: center;
@@ -37,11 +37,4 @@
     border-bottom: 27px solid transparent;
     z-index: 1;
   }
-}
-
-.catalog-main__demo-video {
-  display: block;
-  position: relative;
-  max-width: 280px;
-  min-height: 177px;
 }
