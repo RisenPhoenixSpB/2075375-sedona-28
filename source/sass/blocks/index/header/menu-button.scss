@@ -1,0 +1,20 @@
+.menu-button {
+  display: grid;
+  place-items: center;
+  width: 23px;
+  height: 23px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--open {
+    background-image: url("../img/mobile/index/header/menu-button-open.svg");
+  }
+
+  &--close {
+    background-image: url("../img/mobile/index/header/menu-button-close.svg");
+    z-index: 2;
+  }
+}

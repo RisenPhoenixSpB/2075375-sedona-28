@@ -1,0 +1,228 @@
+.fieldset {
+  box-sizing: border-box;
+  max-width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+
+  &--name {
+    margin-bottom: 64px;
+  }
+
+  &--contacts {
+    margin-bottom: 59px;
+  }
+
+  &--radio,
+  &--checkbox {
+    margin-bottom: 49px;
+  }
+
+  &--textarea {
+    margin-bottom: 56px;
+  }
+}
+
+.fieldset__title {
+  @include form-title;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.fieldset__inner {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.fieldset__label {
+  @include form-text;
+  position: relative;
+  text-align: left;
+  min-height: 79px;
+  transform: translateX(16px);
+}
+
+.fieldset__container {
+  position: relative;
+  display: flex;
+  max-width: 280px;
+  transform: translateX(-16px);
+
+  &--phone {
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 58px;
+      height: 58px;
+      background-color: #e6e6e6;
+      background-image: url("../img/mobile/form/form/elements/phone.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: 1;
+    }
+  }
+
+  &--email {
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 58px;
+      height: 58px;
+      background-color: #e6e6e6;
+      background-image: url("../img/mobile/form/form/elements/mail.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: 1;
+    }
+  }
+}
+
+.fieldset__input {
+  @include form-title;
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+  min-width: 280px;
+  min-height: 58px;
+  border: none;
+  background-color: #f2f2f2;
+  padding: 16px;
+  text-align: left;
+  text-transform: none;
+
+  &::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:-moz-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+
+  &::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &--name {
+    transform: translateX(-16px);
+  }
+
+  &--contacts {
+    max-width: 222px;
+  }
+}
+
+.fieldset__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fieldset__label-choice {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.control-mark-radio {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.control-label {
+  @include form-title;
+  text-transform: none;
+}
+
+.control-mark-checkbox {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.control-input {
+  &[type="radio"]:checked + .control-mark-radio::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #333333;
+  }
+
+  &[type="checkbox"]:checked + .control-mark-checkbox::before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 16px;
+    background: url("../img/mobile/form/form/elements/tick.svg") no-repeat center;
+  }
+}
+
+.fieldset__textarea {
+  @include form-title;
+  text-align: left;
+  text-transform: none;
+  font-size: 17px;
+  box-sizing: border-box;
+  min-width: 279px;
+  min-height: 150px;
+  margin: 0;
+  padding: 16px;
+  resize: none;
+  border: none;
+  background-color: #f2f2f2;
+
+  &::-webkit-input-placeholder {
+    @include form-title;
+    text-align: left;
+    text-transform: none;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:-moz-placeholder {
+    @include form-title;
+    text-align: left;
+    text-transform: none;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &::-moz-placeholder {
+    @include form-title;
+    text-align: left;
+    text-transform: none;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &::placeholder {
+    @include form-title;
+    text-align: left;
+    text-transform: none;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.3);
+  }
+}

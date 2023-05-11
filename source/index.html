@@ -3,22 +3,21 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
   <header class="page-header">
-    <a class="page-header__link" href="index.html">
-      <img class="page-header__logo logo" src="./img/logo/logo.svg" alt="Логотип Седоны" width="185" height="96">
+    <a class="logo logo__link" href="index.html">
+      <img class="logo__image" src="./img/logo/logo.svg" alt="Логотип Седоны" width="185" height="96">
     </a>
-    <button class="menu-button" type="button">
+    <button class="page-header__menu-button menu-button menu-button--open" type="button">
       <span class="visually-hidden">Открыть меню</span>
     </button>
-    <nav class="page-header__navigation navigation">
-      <button class="menu-button menu-button--close" type="button">
-        <span class="visually-hidden">Закрыть меню</span>
-      </button>
+    <nav class="page-header__navigation navigation navigation--close">
       <ul class="navigation__list">
         <li class="navigation__item">
           <a class="navigation__link navigation__link--current" href="index.html">Главная</a>
@@ -39,25 +38,27 @@
   <main class="main">
     <section class="intro">
       <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-      <div class="intro__wrapper">
-        <span class="intro__text text-intro"></span>
+      <div class="intro__inner-images">
+        <img class="intro__text-image" src="./img/mobile/index/main/intro/intro-text.svg" width="282" height="214">
+      </div>
+      <div class="intro__inner">
+        <h2 class="intro__title">Седона — небольшой <br> городок в Аризоне, заслуживающий большего!</h2>
+        <p class="intro__text">Рассмотрим 5 причин, по которым <br> Седона круче, чем гранд каньон!</p>
       </div>
     </section>
     <section class="advantages">
-      <h2 class="advantages__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-      <p class="advantages__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      <div class="advantages__wrapper">
+      <div class="advantages__list-wrapper">
         <ul class="advantages__list">
-          <li class="advantages__item item">
+          <li class="advantages__item item item--blue">
             <h3 class="item__title">Настоящий городок</h3>
             <p class="item__number">— №1 —</p>
-            <p class="item__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            <p class="item__description">Седона не аттракцион для туристов, <br> там течет своя жизнь</p>
           </li>
           <li class="advantages__item item">
-            <img class="item__image" src="./img/index/advantages/advantages-town.jpg" alt="Изображение городка"
+            <img class="item__image" src="./img/mobile/index/main/advantages/advantages-photos/advantages-town.jpg" alt="Изображение городка"
               width="320" height="260">
           </li>
-          <li class="advantages__item item">
+          <li class="advantages__item item item--white">
             <ul class="item__list">
               <li class="item__point item__point--house">
                 <h4 class="item__point-title">Жилье</h4>
@@ -73,26 +74,26 @@
               </li>
             </ul>
           </li>
-          <li class="advantages__item item">
+          <li class="advantages__item item item--blue">
             <h3 class="item__title">Там есть мост дьявола</h3>
             <p class="item__number">— №2 —</p>
             <p class="item__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </li>
           <li class="advantages__item item">
-            <img class="item__image" src="./img/index/advantages/advantages-bridge.jpg" alt="Изображение моста дьявола"
+            <img class="item__image" src="./img/mobile/index/main/advantages/advantages-photos/advantages-bridge.jpg" alt="Изображение моста дьявола"
               width="320" height="260">
           </li>
-          <li class="advantages__item item">
+          <li class="advantages__item item item--grey">
             <h3 class="item__title">Небольшая площадь</h3>
             <p class="item__number">— №3 —</p>
             <p class="item__description">Все интересные места находятся очень близко</p>
           </li>
-          <li class="advantages__item item">
+          <li class="advantages__item item item--grey">
             <h3 class="item__title">Красивая дорога</h3>
             <p class="item__number">— №4 —</p>
             <p class="item__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="advantages__item item">
+          <li class="advantages__item item item--grey">
             <h3 class="item__title">Мало туристов</h3>
             <p class="item__number">— №5 —</p>
             <p class="item__description">Большинство едет в гранд каньон и толпится там</p>
@@ -105,13 +106,13 @@
         <h2 class="hotel-search__title">Заинтересовались?</h2>
         <p class="hotel-search__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц
           в седоне</p>
-        <a class="hotel-search__link" href="#">Найти гостиницу</a>
       </div>
+        <a class="hotel-search__link" href="#">Найти гостиницу</a>
     </section>
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
       <a class="map__link" href="#">
-        <img class="map__image" src="./img/index/map/map-mobile.png" alt="Изображение карты" width="320" height="350">
+        <img class="map__image" src="./img/mobile/index/footer/map-mobile.png" alt="Изображение карты" width="320" height="350">
       </a>
     </section>
   </main>
@@ -131,8 +132,8 @@
         </li>
       </ul>
       <div class="page-footer__develop-wrapper">
-        <p class="page-footer__develop-text">Разработано</p>
         <a class="page-footer__develop-link" href="https://htmlacademy.ru/intensive/adaptive">
+          Разработано
           <svg class="page-footer__develop-logo" xmlns="http://www.w3.org/2000/svg" width="28" height="33" fill="none">
             <path fill="#000"
               d="M14.15.25h-.1L.5 1.59v23.63l13.55 7.66 13.45-7.66V1.6L14.15.25ZM25.6 11.83l-11.54-6.5v-.1h-.1l-.1-.1v.1L2.4 11.83V3.22l11.54-1.15 11.64 1.15v8.6ZM13.95 6.76l11.54 6.4-4.51 2.5-7.13-4.02v1.33l5.92 3.35-.9.48-5.02-2.87v1.34l3.81 2.2-.8.48-3.01-1.72v1.34l1.9 1.05-1.8 1.05-11.44-6.4 11.44-6.51ZM2.41 14.7l11.44 6.5v.96l-7.93-4.5V19l8.03 4.6v1.05l-8.03-4.5v1.34l8.03 4.6 8.13-4.7v-4.97l3.41-1.91v9.56l-11.54 6.6-11.54-6.5V14.7Z" />
@@ -143,5 +144,7 @@
   </footer>
 
 </body>
+
+<script src="./js/script.js"></script>
 
 </html>

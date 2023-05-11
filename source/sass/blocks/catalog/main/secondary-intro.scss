@@ -1,0 +1,25 @@
+.secondary-intro {
+  max-width: 320px;
+  margin: 0 0 30px 0;
+}
+
+.secondary-intro__wrapper {
+  position: relative;
+  min-height: 158px;
+  background: #2e4149 url("../img/mobile/catalog/secondary-intro/second-intro-mobile.png") no-repeat center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    width: 320px;
+    height: 57px;
+    background: url("../img/mobile/catalog/secondary-intro/second-intro-element.svg.svg") no-repeat center;
+  }
+}
+
+.secondary-intro__text-wrapper {
+  display: block;
+  transform: translateY(52px);
+  margin: 0 auto;
+}

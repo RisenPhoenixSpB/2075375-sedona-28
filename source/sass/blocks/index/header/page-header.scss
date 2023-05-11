@@ -1,0 +1,21 @@
+.page-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 56px;
+  max-width: 320px;
+  background: #ffffff;
+}
+
+.page-header__navigation {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.page-header__menu-button {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  padding: 0;
+}

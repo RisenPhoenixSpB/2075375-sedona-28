@@ -1,1 +1,33 @@
-// Начните писать стили здесь
+/* Общие стили */
+@import "./global/fonts.scss";
+@import "./global/global.scss";
+@import "./global/visually-hidden.scss";
+@import "./global/mixins.scss";
+
+/* Стили хедера всех страниц для всех версий устройств */
+@import "./blocks/index/header/logo.scss";
+@import "./blocks/index/header/page-header.scss";
+@import "./blocks/index/header/menu-button.scss";
+@import "./blocks/index/header/navigation.scss";
+
+/* Стили мейна для index.html */
+@import "./blocks/index/main/index-intro.scss";
+@import "./blocks/index/main/advantages.scss";
+@import "./blocks/index/main/item.scss";
+@import "./blocks/index/main/hotel-search.scss";
+@import "./blocks/index/main/map.scss";
+
+/* Стили мейна для catalog.html */
+@import "./blocks/catalog/main/secondary-intro.scss";
+@import "./blocks/catalog/main/gallery.scss";
+@import "./blocks/catalog/main/cards.scss";
+@import "./blocks/catalog/main/demo.scss";
+
+/* Стили мейна для form.html */
+@import "./blocks/form/main/form-main.scss";
+@import "./blocks/form/main/form-body.scss";
+@import "./blocks/form/main/fieldset.scss";
+@import "./blocks/form/main/modal.scss";
+
+/* Стили футера всех страниц для всех версий устройств */
+@import "./blocks/index/footer/page-footer.scss";

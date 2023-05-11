@@ -1,0 +1,40 @@
+.form-main__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 53px;
+  max-width: 320px;
+}
+
+.form-main__form-feedback {
+  box-sizing: border-box;
+  max-width: 280px;
+  min-height: 134px;
+  margin: 36px auto 0 auto;
+}
+
+.form-main__form-title {
+  @include form-title;
+  margin: 0 0 24px 0;
+}
+
+.form-main__form-text {
+  @include form-text;
+}
+
+.form-main__modal-container {
+  position: fixed;
+  top: 0;
+  width: 320px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+
+  &--open {
+    display: grid;
+    place-items: center;
+  }
+
+  &--close {
+    display: none;
+  }
+}
